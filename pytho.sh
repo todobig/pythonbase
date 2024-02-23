@@ -34,6 +34,9 @@ make altinstall
 # symlink  for pip3.9 to pip
 sudo update-alternatives --install /usr/bin/pip pip /usr/local/bin/pip3.9 1
 
+# symlink  for python3 to python
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+
 
 # Check Python version
 python_version=$(python3 --version 2>&1)
